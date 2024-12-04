@@ -189,8 +189,14 @@ h6 {
   transition: all .3s;
   position: fixed;
   z-index: 100;
-  width: 100%;
-  padding: 1.25rem 0
+  width: 100%
+}
+.header._header-scroll {
+  padding: .3125rem 0;
+  background-color: rgba(0,0,0,.9)
+}
+.header._header-scroll .header__logo {
+  max-width: 4.375rem
 }
 .header__container {
   display: flex;
@@ -199,6 +205,8 @@ h6 {
   gap: 1.25rem
 }
 .header__logo {
+  transition: all .3s;
+  max-width: 8.1875rem;
   position: relative;
   z-index: 101
 }
@@ -207,8 +215,7 @@ h6 {
   height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
-  aspect-ratio: 1/1;
-  max-width: 8.1875rem
+  aspect-ratio: 1/1
 }
 .header__menu {
   flex: 1 1 auto
@@ -222,10 +229,6 @@ h6 {
 }
 .header__button {
   text-transform: uppercase
-}
-._header-scroll {
-  padding: .3125rem 0;
-  background-color: rgba(0,0,0,.9)
 }
 .footer {
   background: linear-gradient(270deg,#280808,#8e1d1c 28.049%,#280808 100%);
